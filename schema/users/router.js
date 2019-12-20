@@ -43,7 +43,7 @@ router.post('/login', (req, res) => {
         } else {
           // we will return 401 if the password or username are invalid
           // we don't want to let attackers know when they have a good username
-          res.status(401).json({ message: 'Invalid Credentials' });
+          res.status(401).json({ message: 'You shall not pass!' });
         }
       })
       .catch(error => {
